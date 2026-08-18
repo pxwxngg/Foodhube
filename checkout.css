@@ -1,0 +1,366 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f8f8f8;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    background: #ff6b35;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+}
+
+
+header h2 {
+
+    font-size: 28px;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+    color: yellow;
+
+}
+
+
+/* =========================
+   CHECKOUT
+========================= */
+
+.checkout {
+
+    padding:
+        100px 50px 50px;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+.checkout > h1 {
+
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.checkout-container {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 30px;
+
+}
+
+
+/* =========================
+   BOXES
+========================= */
+
+.customer-details,
+.order-summary {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.1);
+
+}
+
+
+.customer-details h2,
+.order-summary h2 {
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+}
+
+
+form input[type="text"],
+form input[type="tel"],
+form textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border:
+        1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+
+form input:focus,
+form textarea:focus {
+
+    border-color:
+        #ff6b35;
+
+}
+
+
+form textarea {
+
+    height: 100px;
+
+    resize: vertical;
+
+}
+
+
+/* =========================
+   PAYMENT
+========================= */
+
+.customer-details h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.payment {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.payment label {
+
+    margin: 0;
+
+    font-weight: normal;
+
+}
+
+
+/* =========================
+   PLACE ORDER
+========================= */
+
+.place-order-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #ff6b35;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.place-order-btn:hover {
+
+    background: #e85b2a;
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================
+   ORDER ITEMS
+========================= */
+
+.order-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid #eee;
+
+}
+
+
+.order-item-name {
+
+    font-weight: bold;
+
+}
+
+
+.order-item-price {
+
+    color: #ff6b35;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   TOTAL
+========================= */
+
+.total {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top:
+        2px solid #eee;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    text-align: right;
+
+}
+
+
+.total span {
+
+    color: #ff6b35;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .checkout-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .checkout {
+
+        padding:
+            100px 20px 30px;
+
+    }
+
+    header {
+
+        padding:
+            20px;
+
+    }
+
+}

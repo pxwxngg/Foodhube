@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f8f8f8;
+
+}
+
+
+/* HEADER */
+
+header {
+
+    background: #ff6b35;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+}
+
+
+header h2 {
+    font-size: 28px;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-weight: bold;
+
+}
+
+
+nav a:hover {
+    color: yellow;
+}
+
+
+/* ORDERS */
+
+.orders-section {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 100px 30px 50px;
+
+}
+
+
+.orders-section > h1 {
+
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* ORDER CARD */
+
+.order-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.1);
+
+}
+
+
+.order-header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    border-bottom:
+        1px solid #eee;
+
+    padding-bottom: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.order-id {
+
+    color: #ff6b35;
+
+    font-weight: bold;
+
+}
+
+
+.order-date {
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+/* ITEMS */
+
+.order-food {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid #eee;
+
+}
+
+
+.food-name {
+    font-weight: bold;
+}
+
+
+.food-quantity {
+    color: #666;
+}
+
+
+.food-price {
+
+    color: #ff6b35;
+
+    font-weight: bold;
+
+}
+
+
+/* ORDER FOOTER */
+
+.order-footer {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+}
+
+
+.payment {
+
+    background: #e8f8ed;
+
+    color: #218838;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+.order-total {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #ff6b35;
+
+}
+
+
+/* EMPTY */
+
+#noOrders {
+
+    text-align: center;
+
+    display: none;
+
+}
+
+
+#noOrders h2 {
+
+    color: #666;
+
+    margin-bottom: 10px;
+
+}
+
+
+#noOrders p {
+
+    color: #888;
+
+    margin-bottom: 20px;
+
+}
+
+
+#noOrders a {
+
+    display: inline-block;
+
+    background: #ff6b35;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header {
+
+        padding: 20px;
+
+    }
+
+    .orders-section {
+
+        padding:
+            100px 15px 30px;
+
+    }
+
+    .order-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+    }
+
+    .order-footer {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+}
+/* =========================
+   ORDER FOOD ITEMS
+   ========================= */
+
+.order-food-list {
+    margin-top: 15px;
+}
+
+
+.order-food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+
+    margin-bottom: 8px;
+
+    border-radius: 8px;
+
+    background: #f7f7f7;
+}
+
+
+.order-food-item strong {
+    font-size: 16px;
+}
+
+
+.order-food-item small {
+    color: #666;
+}
+
+
+.order-total {
+    margin-top: 15px;
+
+    padding-top: 15px;
+
+    border-top: 2px solid #ddd;
+
+    font-size: 20px;
+
+    text-align: right;
+}
