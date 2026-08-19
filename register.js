@@ -87,7 +87,7 @@ registerForm.addEventListener("submit", async function(event) {
 
 
         const response = await fetch(
-            "https://delirium-purple-badly.ngrok-free.dev/foods",
+            "https://delirium-purple-badly.ngrok-free.dev/register",
             {
                 method: "POST",
 
