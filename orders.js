@@ -23,9 +23,15 @@ async function loadOrders() {
         // =========================
 
         const response =
-            await fetch(
-                "https://delirium-purple-badly.ngrok-free.dev/orders"
-            );
+    await fetch(
+        "https://delirium-purple-badly.ngrok-free.dev/orders",
+        {
+            method: "GET",
+            headers: {
+                "ngrok-skip-browser-warning": "true"
+            }
+        }
+    );
 
 
         if (!response.ok) {
