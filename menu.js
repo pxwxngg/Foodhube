@@ -52,7 +52,13 @@ const searchInput =
 // =========================
 
 fetch(
-    "https://delirium-purple-badly.ngrok-free.dev/foods"
+    "https://delirium-purple-badly.ngrok-free.dev/foods",
+    {
+        method: "GET",
+        headers: {
+            "ngrok-skip-browser-warning": "true"
+        }
+    }
 )
 
 .then(response => {
