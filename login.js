@@ -56,7 +56,7 @@ loginForm.addEventListener("submit", async function(event) {
     try {
 
         const response = await fetch(
-            "https://delirium-purple-badly.ngrok-free.dev/foods",
+            "https://delirium-purple-badly.ngrok-free.dev/login",
             {
                 method: "POST",
 
