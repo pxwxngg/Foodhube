@@ -331,7 +331,7 @@ document
 
                 const response =
                     await fetch(
-                        "https://delirium-purple-badly.ngrok-free.dev/foods",
+                        "https://delirium-purple-badly.ngrok-free.dev/placeOrder",
                         {
                             method: "POST",
 
