@@ -33,6 +33,8 @@ async function loadOrders() {
         }
     );
 
+    console.log("Orders response:", response.status);
+
 
         if (!response.ok) {
 
